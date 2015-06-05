@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER CompanionCube samuel.hodgkins@sky.com
+ENV BYOND_MAJOR 507
+ENV BYOND_MINOR 1286
 RUN dpkg --add-architecture i386 && apt-get update
 RUN apt-get -y install libc6-i386 wget unzip make libstdc++6:i386
 RUN wget http://www.byond.com/download/build/507/507.1286_byond_linux.zip && unzip 507.1286_byond_linux.zip && rm 507.1286_byond_linux.zip
