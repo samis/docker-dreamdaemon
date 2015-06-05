@@ -7,4 +7,4 @@ WORKDIR /byond
 RUN mkdir -p /usr/share/man/man6/ && make install
 WORKDIR /
 RUN rm -r byond
-CMD DreamDaemon
+ENTRYPOINT ["DreamDaemon"]
