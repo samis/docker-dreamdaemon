@@ -10,4 +10,6 @@ WORKDIR /byond
 RUN mkdir -p /usr/share/man/man6/ && make install
 WORKDIR /
 RUN rm -r byond
-ENTRYPOINT ["DreamDaemon"]
+COPY DreamDaemon.sh /
+RUN chmod +x /DreamDaemon.sh
+ENTRYPOINT ["/DreamDaemon.sh", "3000"]
