@@ -14,3 +14,4 @@ COPY DreamDaemon.sh /
 RUN chmod +x /DreamDaemon.sh
 ENTRYPOINT ["/DreamDaemon.sh", "3000"]
 EXPOSE 3000
+CMD ["/game/world.dmb", "-safe"]
