@@ -17,4 +17,4 @@ RUN useradd -ms /bin/bash dreamdaemon
 USER dreamdaemon
 ENTRYPOINT ["/DreamDaemon.sh", "3000"]
 EXPOSE 3000
-CMD ["/game/world.dmb", "-safe"]
+CMD ["/world/world.dmb", "-safe"]
